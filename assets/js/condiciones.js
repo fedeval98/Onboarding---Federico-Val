@@ -205,6 +205,7 @@ if (datoIngresado == 1 || datoIngresado == 2 || datoIngresado == 3 ){
 } else{
     alert(`Ese valor no esta permitido`)
 }
+*/
 
 // Ejercicio 13
 console.log ("Ejercicio 13")
@@ -218,6 +219,14 @@ switch (true){
     break
     case entrada == "si":
         alert("Bienvenido")
+        if (entrada =="no"){
+            let compraEntrada = prompt("¿Desea comprar una entrada?")
+            if (compraEntrada == "no"){
+                alert("Hasta luego, vuelva pronto")
+            } else{
+                alert("Bienvenido")
+            }
+        }
     break
     case entrada == "no":
         if (nombreCliente !== "Fede" && paseCliente !== "VIP" && entrada == "no"){
@@ -235,8 +244,8 @@ switch (true){
         }
     break
 }
-*/
 
+/*
 // Ejercicio 14
 console.log ("Ejercicio 14")
 
