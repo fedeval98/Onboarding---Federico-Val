@@ -190,7 +190,7 @@ switch (true){
     case miEdad > 1000:
         alert(`Flaco, no me mientas, no sos dracula.`)
     break
-} */
+}
 
 // Ejercicio 12
 console.log ("Ejercicio 12")
@@ -235,10 +235,54 @@ switch (true){
         }
     break
 }
-
+*/
 
 // Ejercicio 14
 console.log ("Ejercicio 14")
+
+const numeroIncognita = Math.floor(Math.random() * 10) + 1
+let numeroIngresado = Number(prompt("Ingrese un numero del 1 al 10 (Quedan 2 intentos mas)"))
+
+console.log(numeroIncognita)
+
+switch (true){
+    case numeroIngresado == numeroIncognita:
+        alert("Felicidades! Ganaste!")
+    break
+    case numeroIngresado < numeroIncognita:
+        alert(`El número ingresado es menor al número a adivinar, vuelva intentarlo(Queda 1 intento mas)`)
+        let numeroIngresado2 = Number(prompt("Ingrese un nuevo numero del 1 al 10"))
+        if (numeroIngresado2 > numeroIncognita) {
+            alert(`El número ingresado es mayor al número a adivinar, vuelva intentarlo(Ultima oportunidad)`)
+            let numeroIngresado3 = Number(prompt("Ingrese un nuevo numero del 1 al 10"))
+            if (numeroIngresado3 == numeroIncognita) {
+                alert(`Ganaste!, adivinaste el número`)
+            } else{
+                alert("Te quedaste sin intentos :'c")
+                }
+        }
+    break
+    case numeroIngresado > numeroIncognita:
+        alert(`El número ingresado es mayor al número a adivinar, vuelva intentarlo(Queda 1 intento mas)`)
+        let numeroIngresado4 = Number(prompt("Ingrese un nuevo numero del 1 al 10"))
+        if (numeroIngresado4 < numeroIncognita){
+            alert(`El número ingresado es menor al número a adivinar, vuelva intentarlo(Ultima oportunidad)`)
+            let numeroIngresado5 = Number(prompt("Ingrese un nuevo numero del 1 al 10"))
+            if (numeroIngresado5 == numeroIncognita) {
+                alert(`Ganaste!, adivinaste el número`)
+            } else{
+                alert("Te quedaste sin intentos :'c")
+                }
+        }
+    break
+    case numeroIngresado > 10:
+        alert("Numero incorrecto")
+    break
+}
+
+if (numeroIngresado == numeroIncognita){
+    alert(`Ganaste!, adivinaste el número`)
+}
 // Ejercicio 15
 console.log ("Ejercicio 15")
 // Ejercicio 16
