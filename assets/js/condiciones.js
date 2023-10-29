@@ -1,4 +1,3 @@
-/*
 // Ejercicio 1
 console.log("Ejercicio 1")
 let num1 = 5
@@ -188,10 +187,9 @@ switch (true){
         alert(`¿En realidad tiene esa edad?`)
     break
     case miEdad > 1000:
-        alert(`Flaco, no me mientas, no sos dracula.`)
+        alert(`No me mientas, no sos dracula.`)
     break
 }
-*/
 
 // Ejercicio 12
 console.log ("Ejercicio 12")
@@ -216,7 +214,6 @@ if (datoIngresado >3 || datoIngresado < 1){
     }
 }
 
-/*
 // Ejercicio 13
 console.log ("Ejercicio 13")
 let nombreCliente = prompt("Porfavor, ingrese su nombre")
@@ -302,16 +299,115 @@ switch (true){
 if (numeroIngresado == numeroIncognita){
     alert(`Ganaste!, adivinaste el número`)
 }
+
+
 // Ejercicio 15
 console.log ("Ejercicio 15")
+
+let player1 = prompt("Jugador 1, ingrese su nombre")
+let player2 = prompt("Jugador 2, ingrese su nombre")
+
+let ppt1 = prompt("Jugador 1, ingrese: ¿piedra, papel o tijera?")
+let ppt2 = prompt("Jugador 2, ingrese: ¿piedra, papel o tijera?")
+
+switch (true){
+    case ppt1 == "piedra" && ppt2 == "tijera":
+    case ppt1 == "papel" && ppt2 == "piedra":
+    case ppt1 == "tijera" && ppt2 == "papel":
+        alert(`${player1} es el ganador`)
+    break
+    case ppt2 == "piedra" && ppt1 == "tijera":
+    case ppt2 == "papel" && ppt1 == "piedra":
+    case ppt2 == "tijera" && ppt1 == "papel":
+        alert(`${player2} es el ganador`)
+    break
+    case ppt2 == ppt1:
+        alert(`${player1} y ${player2} empataron, vuelvan a intentarlo`)
+        ppt1 = prompt("Jugador 1, ingrese: ¿piedra, papel o tijera?")
+        ppt2 = prompt("Jugador 2, ingrese: ¿piedra, papel o tijera?")
+        case ppt1 == "piedra" && ppt2 == "tijera":
+        case ppt1 == "papel" && ppt2 == "piedra":
+        case ppt1 == "tijera" && ppt2 == "papel":
+        alert(`${player1} es el ganador`)
+    break
+        case ppt2 == "piedra" && ppt1 == "tijera":
+        case ppt2 == "papel" && ppt1 == "piedra":
+        case ppt2 == "tijera" && ppt1 == "papel":
+        alert(`${player2} es el ganador`)
+    break
+    default:
+        alert("Un jugador hizo trampa.")
+    break
+}
+
 // Ejercicio 16
 console.log ("Ejercicio 16")
+
+let valor3 = parseInt(prompt("Ingrese primer valor del 1 al 100"))
+let valor4 = parseInt(prompt("Ingrese segundo valor del 1 al 100"))
+let operacion2 = prompt("Elija una operacion: suma - resta - división - multiplicación - raíz")
+
+
+switch (true){
+    case operacion2 == "suma" ||"Suma" || "SUMA":
+        let suma2 = valor3 + valor4
+        alert(`El resultado de la suma ${valor3} + ${valor4} es ${suma2}`)
+        console.log(`El resultado de la suma ${valor3} + ${valor4} es ${suma2}`)
+    break
+    case operacion2 == "resta" || "Resta" || "RESTA":
+        let resta2 = valor3 - valor4
+        alert(`Su resultado es ${resta2}`)
+        console.log(`Su resultado es ${resta2}`)
+    break
+    case operacion2 == "division" || "Division" || "DIVISION" || "división" || "División" || "DIVISIÓN":
+    case valor4 == 0:
+        alert("ERROR, vuelva a ingresar el divisor, no puede ser 0")
+        valor4 = Number(prompt("Ingrese divisor del 1 al 100"))
+        let division2 = valor3 / valor4
+        alert(`Su resultado es ${division2}`)
+        console.log(`Su resultado es ${division2}`)
+    break
+    case operacion2 == "multiplicacion" || "Multiplicacion" || "MULTIPLICACION" || "multiplicación" || "Multiplicación" || "MULTIPLICACIÓN":
+        let multiplicacion2 = valor3 * valor4
+        alert(`Su resultado es ${multiplicacion2}`)
+        console.log(`Su resultado es ${multiplicacion2}`)
+    break
+    case operacion2 == "raiz" || "Raiz" || "RAIZ" || "raíz" || "Raíz" || "RAÍZ":
+        let raiz2 = valor3 * Math.sqrt(valor4)
+        alert(`Su resultado es ${raiz2}`)
+        console.log(`Su resultado es ${raiz2}`)
+    break
+}
+
 // Ejercicio 17
 console.log ("Ejercicio 17")
-// Ejercicio 18
-console.log ("Ejercicio 18")
-// Ejercicio 19
-console.log ("Ejercicio 19")
-// Ejercicio 20
-console.log ("Ejercicio 20")
- */
+
+let nombre17 = prompt("Ingrese su nombre")
+let apellido17 = prompt("Ingrese su apellido")
+let dni17 = Number(prompt("Ingrese su numero de DNI"))
+let domicilio17 = prompt("Ingrese su domicilio")
+let fechanacimiento17 = prompt("Ingrese su fecha de nacimiento")
+let confimacion17 = prompt(`Los datos ingresados son:
+Nombre: ${nombre17}
+Apellido: ${apellido17}
+DNI: ${dni17}
+Domiclio: ${domicilio17}
+Fecha de Nacimiento: ${fechanacimiento17}
+¿Los datos son correctos?`)
+
+switch (true){
+    case confimacion17 == "si":
+        let persona17 = {
+            nombre: nombre17,
+            apellido: apellido17,
+            dni: dni17,
+            domicilio: domicilio17,
+            fecha_nacimiento: fechanacimiento17
+        }
+        alert("Registro exitoso")
+        console.table(persona17)
+    break
+    case confimacion17 == "no":
+        alert("Vuelva a intentarlo dentro de 1 mes")
+    break
+}
