@@ -191,22 +191,32 @@ switch (true){
         alert(`Flaco, no me mientas, no sos dracula.`)
     break
 }
+*/
 
 // Ejercicio 12
 console.log ("Ejercicio 12")
 
 let datoIngresado = Number(prompt("Ingrese un numero del 1 al 3"))
-let datoRandom = Number(prompt("Ingrese un numero aleatorio"))
 
-if (datoIngresado == 1 || datoIngresado == 2 || datoIngresado == 3 ){
-    alert(`El número ingresado es ${datoIngresado}`)
-    alert(`El doble del número ingresado es ${datoIngresado * 2}`)
-    alert(`El triple del número ingresado es ${datoIngresado * 3}`)
-} else{
-    alert(`Ese valor no esta permitido`)
+if (datoIngresado >3 || datoIngresado < 1){
+        alert(`Valor no permitido`)
+} else { 
+    let datoRandom = Number(prompt("Ingrese un numero aleatorio"))
+    switch (true){
+        case datoIngresado == 1:
+            alert(`El valor del dato ingresado es: ${datoIngresado * datoRandom}`)
+        break
+        case datoIngresado == 2:
+            alert(`El valor del doble del  dato ingresado es: ${datoIngresado * datoRandom}`)
+        break
+        case datoIngresado == 3:
+            alert(`El valor del triple del dato ingresado es: ${datoIngresado * datoRandom}`)
+        break
+
+    }
 }
-*/
 
+/*
 // Ejercicio 13
 console.log ("Ejercicio 13")
 let nombreCliente = prompt("Porfavor, ingrese su nombre")
@@ -245,7 +255,7 @@ switch (true){
     break
 }
 
-/*
+
 // Ejercicio 14
 console.log ("Ejercicio 14")
 
