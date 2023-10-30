@@ -1,3 +1,4 @@
+/*
 // Ejercicio 1
 console.log("Ejercicio 1")
 let num1 = 5
@@ -213,6 +214,7 @@ if (datoIngresado >3 || datoIngresado < 1){
 
     }
 }
+*/
 
 // Ejercicio 13
 console.log ("Ejercicio 13")
@@ -225,18 +227,14 @@ switch (true){
         alert("Bienvenido")
     break
     case entrada == "si":
-        alert("Bienvenido")
-        if (entrada =="no"){
-            let compraEntrada = prompt("¿Desea comprar una entrada?")
-            if (compraEntrada == "no"){
-                alert("Hasta luego, vuelva pronto")
-            } else{
-                alert("Bienvenido")
-            }
+        let compraEntrada = prompt("¿Desea utilizar su entrada?")
+        if (compraEntrada == "no"){
+            alert("Hasta luego, vuelva pronto")
+        } else{
+            alert("Bienvenido")
         }
     break
-    case entrada == "no":
-        if (nombreCliente !== "Fede" && paseCliente !== "VIP" && entrada == "no"){
+    default:
             let compraCliente = prompt("¿Desea usted comprar una entrada? (si o no)")
                 if (compraCliente == "si"){
                     let valorCompra = Number(prompt("Ingrese cuanto dinero tiene disponible"))
@@ -248,11 +246,10 @@ switch (true){
                 } else{
                     alert(`Hasta luego.`)
                 }
-        }
     break
 }
 
-
+/*
 // Ejercicio 14
 console.log ("Ejercicio 14")
 
@@ -411,3 +408,4 @@ switch (true){
         alert("Vuelva a intentarlo dentro de 1 mes")
     break
 }
+*/
