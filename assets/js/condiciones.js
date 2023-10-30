@@ -1,4 +1,4 @@
-/*
+
 // Ejercicio 1
 console.log("Ejercicio 1")
 let num1 = 5
@@ -214,7 +214,6 @@ if (datoIngresado >3 || datoIngresado < 1){
 
     }
 }
-*/
 
 // Ejercicio 13
 console.log ("Ejercicio 13")
@@ -249,7 +248,7 @@ switch (true){
     break
 }
 
-/*
+
 // Ejercicio 14
 console.log ("Ejercicio 14")
 
@@ -292,11 +291,6 @@ switch (true){
         alert("Numero incorrecto")
     break
 }
-
-if (numeroIngresado == numeroIncognita){
-    alert(`Ganaste!, adivinaste el número`)
-}
-
 
 // Ejercicio 15
 console.log ("Ejercicio 15")
@@ -408,4 +402,3 @@ switch (true){
         alert("Vuelva a intentarlo dentro de 1 mes")
     break
 }
-*/
