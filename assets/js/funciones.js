@@ -181,21 +181,8 @@ function verificarDia (dia){
 
 verificarDia(diaIngresado)
 
+
+// Opcionales 
 // Ejercicio 15
 console.log("Ejercicio 15")
 // Ejercicio 16
-console.log("Ejercicio 16")
-// Ejercicio 17
-console.log("Ejercicio 17")
-// Ejercicio 18
-console.log("Ejercicio 18")
-// Ejercicio 19
-console.log("Ejercicio 19")
-// Ejercicio 20
-console.log("Ejercicio 20")
-// Ejercicio 21
-console.log("Ejercicio 21")
-// Ejercicio 22
-console.log("Ejercicio 22")
-// Ejercicio 23
-console.log("Ejercicio 23")

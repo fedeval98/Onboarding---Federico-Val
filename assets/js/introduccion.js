@@ -73,7 +73,7 @@ console.log (frutas[3])
 console.log (frutas[4])
 
 // Ejercicio 13
-let soyMayorDeEdad = (prompt("ingrese una edad")) >= 18
+let soyMayorDeEdad = Number(prompt("ingrese una edad")) >= 18
 
 console.log (`Soy mayor de edad ${soyMayorDeEdad}`)
 
