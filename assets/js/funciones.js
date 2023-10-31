@@ -71,7 +71,7 @@ const numero1 = 10
 const numero2 = 5
 
 const multiplicacion = function (x, y) {
-    let resultadomultiplicacion = x * y
+    const resultadomultiplicacion = x * y
     return resultadomultiplicacion
 }
 const rMultiplicacion = multiplicacion(numero1, numero2)

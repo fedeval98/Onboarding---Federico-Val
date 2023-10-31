@@ -111,9 +111,7 @@ const colorFunction = (colores) =>{
     }
 }
 
-
 colorFunction(colores)
-
 
 //Ejercicio 11
 console.log("Ejercicio 11")
