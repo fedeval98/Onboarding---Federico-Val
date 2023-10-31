@@ -81,8 +81,6 @@ for (let i = 0; i < 5; i++){
 
 console.log(resultado)
 
-
-
 //Ejercicio 8
 console.log("Ejercicio 8")
 const fechaLimite = "1997-8-3"
