@@ -61,7 +61,7 @@ const valor4 = Number(prompt("Ingrese un valor"))
 for (let i = 1; i <= valor4; i++){
     if(valor4 % i === 0){
         division = valor4 / i
-        console.log(`${valor4 / i}`)
+        console.log(division)
     }
 }
 

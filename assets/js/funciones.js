@@ -148,13 +148,13 @@ let ingresos = Number(prompt("Ingrese el monto de sus ingresos"))
 function impuestos (apagar){
     switch (true){
         case ingresos <= 10000:
-            return console.log (`Usted debe pagar un impuesto del 10% de su ingreso, el cual es: ${ingresos * 0.10}`)
+            console.log (`Usted debe pagar un impuesto del 10% de su ingreso, el cual es: ${ingresos * 0.10}`)
         break
         case ingresos >= 10000 && ingresos <= 20000:
-            return console.log (`Usted debe pagar un impuesto del 15% de su ingreso, el cual es: ${ingresos * 0.15}`)
+            console.log (`Usted debe pagar un impuesto del 15% de su ingreso, el cual es: ${ingresos * 0.15}`)
         break
         case ingresos > 20000:
-            return console.log (`Usted debe pagar un impuesto del 20% de su ingreso, el cual es: ${ingresos * 0.20}`)
+            console.log (`Usted debe pagar un impuesto del 20% de su ingreso, el cual es: ${ingresos * 0.20}`)
         break
     }
 }
