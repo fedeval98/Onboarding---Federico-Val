@@ -47,9 +47,8 @@ do{
         case valor3 > contador:
             console.log(`El numero es mayor al secreto`)
         break
-        case valor3 < contador:
+        default:
             console.log("El numero es inferior al secreto")
-        break
     }
 } while (valor3 !== contador){}
 
@@ -154,6 +153,8 @@ for (let i = 0; i < 4; i++){
         case i == 3:
             console.log(`Hola soy ${familia[i].nombre} ${familia[i].apellido} (${familia[i].integrante}) y tengo ${familia[i].edad}`)
         break
+        default:
+            console.log("DATOS INVALIDO")
     }
 }
 
@@ -223,11 +224,3 @@ for (let i = 0; i < numeroArray.length; i++){
 }
 
 console.log (`El numero mas grande es: ${mayorNumero}`)
-
-//Ejercicio 17
-console.log("Ejercicio 17")
-//Ejercicio 18
-console.log("Ejercicio 18")
-//Ejercicio 19
-console.log("Ejercicio 19")
-

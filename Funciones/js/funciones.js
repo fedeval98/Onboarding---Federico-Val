@@ -180,9 +180,3 @@ function verificarDia (dia){
 }
 
 verificarDia(diaIngresado)
-
-
-// Opcionales 
-// Ejercicio 15
-console.log("Ejercicio 15")
-// Ejercicio 16

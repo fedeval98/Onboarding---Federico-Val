@@ -1,4 +1,4 @@
-
+/*
 // Ejercicio 1
 console.log("Ejercicio 1")
 let num1 = 5
@@ -75,6 +75,7 @@ switch (true){
     break
 }
 
+
 // Ejercicio 7
 console.log ("Ejercicio 7")
 let color = prompt("Elija un color entre estos 3: rojo, azul o verde")
@@ -93,40 +94,43 @@ switch (true){
     break
 }
 
+
 // Ejercicio 8
 console.log ("Ejercicio 8")
 
-let valor1 = parseInt(prompt("Ingrese primer valor del 1 al 100"))
-let valor2 = parseInt(prompt("Ingrese segundo valor del 1 al 100"))
+let valor1 = Number(prompt("Ingrese primer valor del 1 al 100"))
+let valor2 = Number(prompt("Ingrese segundo valor del 1 al 100"))
 let operacion = prompt("Elija una operacion: suma - resta - división - multiplicación - raíz")
 
-
-switch (true){
-    case operacion == "suma" ||"Suma" || "SUMA":
+switch (operacion){
+    case "suma" ||"Suma" || "SUMA":
         let suma = valor1 + valor2
         alert(`El resultado de la suma ${valor1} + ${valor2} es ${suma}`)
         console.log(`El resultado de la suma ${valor1} + ${valor2} es ${suma}`)
     break
-    case operacion == "resta" || "Resta" || "RESTA":
+    case "resta" || "Resta" || "RESTA":
         let resta = valor1 - valor2
         alert(`Su resultado es ${resta}`)
         console.log(`Su resultado es ${resta}`)
     break
-    case operacion == "division" || "Division" || "DIVISION" || "división" || "División" || "DIVISIÓN":
+    case "division" || "Division" || "DIVISION" || "división" || "División" || "DIVISIÓN":
         let division = valor1 / valor2
         alert(`Su resultado es ${division}`)
         console.log(`Su resultado es ${division}`)
     break
-    case operacion == "multiplicacion" || "Multiplicacion" || "MULTIPLICACION" || "multiplicación" || "Multiplicación" || "MULTIPLICACIÓN":
+    case "multiplicacion" || "Multiplicacion" || "MULTIPLICACION" || "multiplicación" || "Multiplicación" || "MULTIPLICACIÓN":
         let multiplicacion = valor1 * valor2
         alert(`Su resultado es ${multiplicacion}`)
         console.log(`Su resultado es ${multiplicacion}`)
     break
-    case operacion == "raiz" || "Raiz" || "RAIZ" || "raíz" || "Raíz" || "RAÍZ":
+    case "raiz" || "Raiz" || "RAIZ" || "raíz" || "Raíz" || "RAÍZ":
         let raiz = valor1 * Math.sqrt(valor2)
         alert(`Su resultado es ${raiz}`)
         console.log(`Su resultado es ${raiz}`)
     break
+    default:
+        alert("Operacion incorrecta")
+        console.log("Operacion incorrecta")
 }
 
 // Ejercicio 9
@@ -171,26 +175,17 @@ console.log ("Ejercicio 11")
 
 let miEdad = Number(prompt("Ingrese su edad"))
 
-switch (true){
-    case miEdad >= 0 && miEdad <= 12:
-        alert(`Usted es un infante`)
-    break
-    case miEdad > 12 && miEdad <= 18:
+if (miEdad >= 0 && miEdad <= 12) {
+    alert(`Usted es un infante`)
+}else if (miEdad > 12 && miEdad <= 18){
         alert(`Usted es un adolescente`)
-    break
-    case miEdad > 18 && miEdad <= 45:
+    } else if(miEdad > 18 && miEdad <= 45){
         alert(`Usted es un joven`)
-    break
-    case miEdad > 45 && miEdad <= 99:
-        alert(`Usted es un anciano`)
-    break
-    case miEdad > 100:
-        alert(`¿En realidad tiene esa edad?`)
-    break
-    case miEdad > 1000:
-        alert(`No me mientas, no sos dracula.`)
-    break
-}
+        } else if (miEdad > 45 && miEdad <= 99){
+            alert(`Usted es un anciano`)
+            } else if (miEdad > 100) {
+                alert(`¿En realidad tiene esa edad?`)
+                }
 
 // Ejercicio 12
 console.log ("Ejercicio 12")
@@ -201,19 +196,18 @@ if (datoIngresado >3 || datoIngresado < 1){
         alert(`Valor no permitido`)
 } else { 
     let datoRandom = Number(prompt("Ingrese un numero aleatorio"))
-    switch (true){
-        case datoIngresado == 1:
+    switch (datoIngresado){
+        case 1:
             alert(`El valor del dato ingresado es: ${datoIngresado * datoRandom}`)
         break
-        case datoIngresado == 2:
+        case 2:
             alert(`El valor del doble del  dato ingresado es: ${datoIngresado * datoRandom}`)
         break
-        case datoIngresado == 3:
+        default:
             alert(`El valor del triple del dato ingresado es: ${datoIngresado * datoRandom}`)
-        break
-
     }
 }
+*/
 
 // Ejercicio 13
 console.log ("Ejercicio 13")
@@ -248,7 +242,7 @@ switch (true){
     break
 }
 
-
+/*
 // Ejercicio 14
 console.log ("Ejercicio 14")
 
@@ -287,9 +281,8 @@ switch (true){
                 }
         }
     break
-    case numeroIngresado > 10:
+    default:
         alert("Numero incorrecto")
-    break
 }
 
 // Ejercicio 15
@@ -402,3 +395,4 @@ switch (true){
         alert("Vuelva a intentarlo dentro de 1 mes")
     break
 }
+*/
